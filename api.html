@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On teste les API</title>
+</head>
+<body>
+    <script>
+        var request= new XMLHttpRequest();
+        var url= "http://localhost/JSON/informations.json";
+        request.open('GET',url);
+        request.send(null);
+
+        request.onreadystatechange=function(){
+            var res= this.responseText;
+            var informations= JSON.parse(res);
+            console.log(informations.nom);
+        }
+    </script>
+</body>
+</html>

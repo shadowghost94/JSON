@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Json</title>
+</head>
+<body>
+    <script>
+        var json='{"nom": "Entreprise XYZ","adresse": {"rue": "123 rue Principale","ville": "Paris","pays": "France"},"employes": [{"nom": "John Doe","age": 30},{"nom": "Jane Smith","age": 25}]}';
+        var res= JSON.parse(json);
+        document.write('Nom: '+res.employes[1].nom);
+        document.write('    '+res["employes"][1]["nom"]);
+        console.log(res);
+    </script>
+</body>
+</html>

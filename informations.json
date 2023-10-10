@@ -1,0 +1,20 @@
+{
+    "nom": "Entreprise XYZ",
+    "adresse": {
+        "rue": "123 rue Principale",
+        "ville": "Paris",
+        "pays": "France"
+    },
+
+    "employes": [
+        {
+        "nom": "John Doe",
+        "age": 30
+        },
+
+        {
+            "nom": "Jane Smith",
+            "age": 25
+        }
+    ]
+}
